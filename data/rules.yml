@@ -1,0 +1,20 @@
+version: "3.1"
+
+rules:
+
+
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: 
+  steps:
+  - intent: check_balance
+  - action: utter_check_balance
+
+- rule:
+  steps:
+  - intent: check_transaction_history
+  - action: utter_check_transaction_history
